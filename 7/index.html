@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion</title>
+    <link rel="icon" href="../gmu.png">
+<style>
+ img {
+     width: 100px; 
+
+ }
+
+ .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style-type: none;
+        background-color: black;
+        height: 50px; 
+    }
+
+    .container li {
+        color: white;
+    }
+
+
+
+</style>
+</head>
+<body>
+
+    <ul class="container">
+        <a href="../index.html">
+            <li>Home</li>
+        </a>
+        <a href="../contact.html">
+            <li>Contact</li>
+        </a>
+        <a href="../about.html">
+            <li>About</li>
+        </a>
+        <a href="../login.html">
+            <li>Login</li>
+        </a>
+    </ul>
+
+    
+<label for = "" ></label> °F to °C: </label>
+<input type = "text" id = "fInput" /> 
+<input type = "button" value="Submit" onclick="ftoc()" />
+<br><br> 
+<label for = "" ></label> °C to °F: </label>
+<input type = "text" id = "cInput" /> 
+<input type = "button" value="Submit" onclick="ctof()" />
+<p id= "conversionOutput"></p>
+
+<img id= "outputImage" src="" alt="" />
+<audio id= "outputAudio" src="" autoplay></audio> 
+
+
+<script src="index.js"></script>
+</body>
+</html>

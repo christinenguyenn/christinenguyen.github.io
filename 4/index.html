@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexgrid</title>
+    <link rel="icon" href="../gmu.png">
+    <style>
+
+.container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style-type: none;
+        background-color: black;
+        height: 50px; 
+    }
+
+    .container li {
+        color: white;
+    }
+
+    .flex-container {
+            display: flex;
+            gap: 1px;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        /* Modified some CSS syntax for container and item */
+        .flex-item {
+            width: 28%;
+            border: 1px solid lightblue;
+            padding: 10px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto;
+            padding: 5px;
+        }
+
+        .grid-items {
+            list-style-type: none;
+        }
+
+        ol {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        ol>li {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <ul class="container">
+        <a href="../index.html">
+            <li>Home</li>
+        </a>
+        <a href="../contact.html">
+            <li>Contact</li>
+        </a>
+        <a href="../about.html">
+            <li>About</li>
+        </a>
+        <a href="../login.html">
+            <li>Login</li>
+        </a>
+    </ul>
+
+    <div class="flex-container">
+        <div class="flex-item">
+            <a href="#">
+                <img src="images/iphoneproduct.jpg" alt="" />
+                <div class="grid-container">
+                    <div class="grid-items">Product desc.</div>
+                    <div class="grid-items">$$$$.$$</div>
+                    <div class="grid-items">At store x</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="flex-item">
+            <a href="#">
+                <img src="images/iphoneproduct.jpg" alt="" />
+                <div class="grid-container">
+                    <div class="grid-items">Product desc.</div>
+                    <div class="grid-items">$$$$.$$</div>
+                    <div class="grid-items">At store x</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="flex-item">
+            <a href="#">
+                <img src="images/iphoneproduct.jpg" alt="" />
+                <div class="grid-container">
+                    <div class="grid-items">Product desc.</div>
+                    <div class="grid-items">$$$$.$$</div>
+                    <div class="grid-items">At store x</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="flex-item">
+            <a href="#">
+                <img src="images/iphoneproduct.jpg" alt="" />
+                <div class="grid-container">
+                    <div class="grid-items">Product desc.</div>
+                    <div class="grid-items">$$$$.$$</div>
+                    <div class="grid-items">At store x</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="flex-item">
+            <a href="#">
+                <img src="images/iphoneproduct.jpg" alt="" />
+                <div class="grid-container">
+                    <div class="grid-items">Product desc.</div>
+                    <div class="grid-items">$$$$.$$</div>
+                    <div class="grid-items">At store x</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="flex-item">
+            <a href="#">
+                <img src="images/iphoneproduct.jpg" alt="" />
+                <div class="grid-container">
+                    <div class="grid-items">Product desc.</div>
+                    <div class="grid-items">$$$$.$$</div>
+                    <div class="grid-items">At store x</div>
+                </div>
+            </a>
+        </div>
+        <!--end of flex-item-->
+    </div>
+    
+</body>
+</html>

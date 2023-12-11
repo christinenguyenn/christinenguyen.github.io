@@ -1,0 +1,46 @@
+table {
+    border: px solid black;
+    width: 600px solid black; 
+    height: 200px solid black; 
+}
+
+th {
+    
+    border: 1px solid black;
+
+}
+
+td {
+
+    border: 1px solid black;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    background-color: black;
+    height: 50px; 
+}
+
+.container li {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+#checkboxbutton {
+    float: left;
+}
+
+
+
+
+
+
+
+
+

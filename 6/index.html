@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Pop-Up</title>
+    <link rel="icon" href="../gmu.png">
+    <style>
+ .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style-type: none;
+        background-color: black;
+        height: 50px; 
+    }
+
+    .container li {
+        color: white;
+    }
+
+
+
+
+    </style>
+</head>
+<body>
+
+  <ul class="container">
+    <a href="../index.html">
+        <li>Home</li>
+    </a>
+    <a href="../contact.html">
+        <li>Contact</li>
+    </a>
+    <a href="../about.html">
+        <li>About</li>
+    </a>
+    <a href="../login.html">
+        <li>Login</li>
+    </a>
+  </ul>
+
+  <p id="degree-text"></p>
+
+    <script>
+        /*
+        Instructions:  
+        Provide the javascript code for the pseudocode below. 
+        */
+  
+        // Define a variable named response and assign it the prompt() message:
+        //     "Enter 1 to convert °C to °F\nEnter 2 to convert °F to °C."
+        
+        let response = window.prompt("TEMPERATURE CONVERSION:\nEnter 1 to convert °C to °F\nEnter 2 to convert °F to °C."); 
+        
+  
+        // If statement: if (response == 1)
+        //    Define a variable named c and assign it the prompt() message: "Enter temperature in Celsius.";
+        //    Define a variable named f and assign it the expression: f = c * (9 / 5) + 32;
+        //    Display an alert() message the user: c + "°C is " + f + "°F";
+  
+  
+      if(response ==1) {
+        let c = prompt("Enter temperature in Celsius."); 
+        let f = c * (9 / 5) + 32;
+        document.getElementById("degree-text").innerHTML = f + "°F";
+        alert(c + "°C is " + f + "°F"); 
+      }
+  
+        // Else if (response == 2)
+        //    Define a variable named f and assign it the prompt() message: "Enter temperature in Fahrenheit.";
+        //    Define a variable named c and assign it the expression: c  = (f - 32) * (5 / 9)
+        //    Display an alert() message the user: f + "°F is " + c + "°C";
+  
+  
+      else if (response ==2) {
+      let f = prompt("Enter temperature in Fahrenheit.");
+      let c =  (f - 32) * (5 / 9);
+      document.getElementById("degree-text").innerHTML = c + "°C";
+      alert(f + "°F is " + c + "°C"); 
+  
+     }
+        // Else
+        //    Display a confirm() message to the user: "An incorrect value was entered.";
+  
+      else {
+  
+      confirm("An incorrect value was entered."); 
+  
+      }
+  
+  
+        // End of code
+  
+  
+    
+      </script>
+</body>
+</html>
